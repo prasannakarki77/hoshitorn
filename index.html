@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard Layout</title>
+
+    <!-- Metronic Styles -->
+    <link rel="stylesheet" href="dist/assets/css/style.bundle.css" />
+
+    <!-- Bootstrap & Custom Styles -->
+    <link
+      rel="stylesheet"
+      href="dist/assets/plugins/global/plugins.bundle.css"
+    />
+    <link rel="stylesheet" href="src/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="src/assets/css/styles.css" />
+
+    <script src="dist/assets/plugins/global/plugins.bundle.js"></script>
+
+    <!-- Metronic Scripts (depends on plugins.bundle.js) -->
+    <script src="dist/assets/js/scripts.bundle.js"></script>
+
+    <!-- Custom Scripts (place after Metronic scripts) -->
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar" class="mb-20"></nav>
+    <aside id="sidebar"></aside>
+    <main class="main-content mt-5">
+      <div id="pageContent">
+        <ul class="nav nav-tabs nav-line-tabs mb-5 fs-6">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              data-bs-toggle="tab"
+              href="#kt_tab_pane_1"
+              >Link 1</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_2"
+              >Link 2</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_3"
+              >Link 3</a
+            >
+          </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="kt_tab_pane_1"
+            role="tabpanel"
+          >
+            ...
+          </div>
+          <div class="tab-pane fade" id="kt_tab_pane_2" role="tabpanel">
+            ...
+          </div>
+          <div class="tab-pane fade" id="kt_tab_pane_3" role="tabpanel">
+            ...
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
