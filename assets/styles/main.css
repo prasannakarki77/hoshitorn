@@ -1,0 +1,44 @@
+.main-content {
+  margin-left: 220px;
+}
+
+.sidebar {
+  width: 220px;
+}
+
+.menu-head {
+  color: #da1113;
+  font-size: 11px;
+  margin: 10px 8px;
+}
+
+.nav-link {
+  position: relative;
+  padding: 10px 20px;
+  color: #2e323c;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #da1113;
+  background: #f5f6fa;
+  .bi {
+    color: #da1113;
+  }
+}
+
+.nav-link.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: #da1113;
+}
+
+i {
+  color: #2e323c;
+}
