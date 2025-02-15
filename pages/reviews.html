@@ -1,1 +1,115 @@
-<div id="reviews">this is reviews</div>
+<div id="reviews">
+  <header
+    class="bg-white d-flex align-items-center px-4 py-2 page-header shadow-sm"
+  >
+    <i
+      class="bi bi-chat-left-text me-4 fs-1 lh-1 color-red page-header__icon"
+    ></i>
+    <div>
+      <h3 class="color-text mb-1 fs-20 fw-bold page-header__title">クチコミ</h3>
+      <p class="mb-0 color-gray fs-12">Reviews</p>
+    </div>
+  </header>
+  <div class="p-10">
+    <section>
+      <p>最終同期日時 : 2025/02/15 06:00</p>
+      <div class="bg-white rounded shadow-sm">
+        <div class="p-4 d-flex justify-content-between">
+          <div>検索条件</div>
+          <div class="d-flex">
+            <button
+              type="button"
+              class="btn btn-sm button-primary me-2 p-2"
+              data-bs-toggle="modal"
+              data-bs-target="#kt_modal_1"
+            >
+              レポート発行
+            </button>
+
+            <div class="modal fade" tabindex="-1" id="kt_modal_1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title">レポート発行</h3>
+                    <div
+                      class="btn btn-icon btn-sm btn-active-light-primary ms-2"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <i class="ki-duotone ki-cross fs-2x"
+                        ><span class="path1"></span><span class="path2"></span
+                      ></i>
+                    </div>
+                    <!--begin::Close-->
+                    <div
+                      class="btn btn-icon btn-sm btn-active-light-primary ms-2"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <i class="bi bi-x fs-1"
+                        ><span class="path1"></span><span class="path2"></span
+                      ></i>
+                    </div>
+                    <!--end::Close-->
+                  </div>
+
+                  <div class="modal-body">
+                    <input
+                      type="text"
+                      placeholder="255文字以内でレポート名を入力してください"
+                      class="w-100 p-2"
+                    />
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-sm button-primary">
+                      発行
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-sm button-primary p-2">
+              レポート発行
+              <i class="bi bi-caret-down-fill fs-6 text-white ms-1 p-0"></i>
+            </button>
+          </div>
+        </div>
+        <hr />
+        <ul class="nav nav-tabs nav-line-tabs mb-5 fs-6 px-4">
+          <li class="nav-item">
+            <a
+              class="nav-link active color-text"
+              data-bs-toggle="tab"
+              href="#kt_tab_pane_1"
+              >優先度から返信</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link color-text"
+              data-bs-toggle="tab"
+              href="#kt_tab_pane_2"
+              >検索して返信</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content px-4" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="kt_tab_pane_1"
+            role="tabpanel"
+          >
+            asdassssss
+          </div>
+          <div class="tab-pane fade" id="kt_tab_pane_2" role="tabpanel">
+            asdasd
+          </div>
+          <div class="tab-pane fade" id="kt_tab_pane_3" role="tabpanel">
+            sss
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
