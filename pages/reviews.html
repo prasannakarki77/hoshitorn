@@ -82,7 +82,7 @@
               class="nav-link active color-text"
               data-bs-toggle="tab"
               href="#kt_tab_pane_1"
-              >優先度から返信</a
+              >検索して返信</a
             >
           </li>
           <li class="nav-item">
@@ -90,7 +90,7 @@
               class="nav-link color-text"
               data-bs-toggle="tab"
               href="#kt_tab_pane_2"
-              >検索して返信</a
+              >優先度から返信</a
             >
           </li>
         </ul>
@@ -100,13 +100,45 @@
             id="kt_tab_pane_1"
             role="tabpanel"
           >
-            asdassssss
+            <div>
+              <p>店舗グループ</p>
+              <select
+                class="form-select"
+                data-control="select2"
+                data-placeholder="Select an option"
+              >
+                <option></option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </select>
+            </div>
+            <div>
+              <p>店舗名</p>
+              <div class="input-group mb-5">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="店舗名（部分一致）"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+            </div>
+            <div>
+              <p>店舗コード</p>
+              <div class="input-group mb-5">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="店舗コード（部分一致）"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+            </div>
           </div>
-          <div class="tab-pane fade" id="kt_tab_pane_2" role="tabpanel">
-            asdasd
-          </div>
-          <div class="tab-pane fade" id="kt_tab_pane_3" role="tabpanel">
-            sss
+          <div class="tab-pane fade x" id="kt_tab_pane_2" role="tabpanel">
+            loading...
           </div>
         </div>
       </div>
